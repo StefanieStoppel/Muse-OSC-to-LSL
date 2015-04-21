@@ -47,31 +47,35 @@ public class MuseOscToLslTest implements MuseDataListener {
 	}
 
 	public void receiveMuseElementsAlpha(MuseConfig config, float[] alpha) {
-		/*System.out.print("Alpha relative: ");
+		System.out.print("Alpha relative: ");
 		for(int i = 0; i< alpha.length; i++){
 			System.out.print(alpha[i] + "\t");
-		}*/
+		}
+		System.out.print("\n");
 	}
 
 	public void receiveMuseElementsBeta(MuseConfig config, float[] beta) {
-		/*System.out.print("Beta relative: ");
+		System.out.print("Beta relative: ");
 		for(int i = 0; i< beta.length; i++){
 			System.out.print(beta[i] + "\t");
-		}		*/
+		}	
+		System.out.print("\n");
 	}
 
 	public void receiveMuseElementsTheta(MuseConfig config, float[] theta) {
-		/*System.out.print("Theta relative: ");
+		System.out.print("Theta relative: ");
 		for(int i = 0; i< theta.length; i++){
 			System.out.print(theta[i] + "\t");
-		}*/
+		}
+		System.out.print("\n");
 	}
 
 	public void receiveMuseElementsDelta(MuseConfig config, float[] delta) {
-		/*System.out.print("Delta relative: ");
+		System.out.print("Delta relative: ");
 		for(int i = 0; i< delta.length; i++){
 			System.out.print(delta[i] + "\t");
-		}*/
+		}
+		System.out.print("\n");
 	}
 
 	//4 values: ffff -> 4 channel eeg
@@ -80,6 +84,7 @@ public class MuseOscToLslTest implements MuseDataListener {
 		for(int i = 0; i< eeg.length; i++){
 			System.out.print(eeg[i] + "\t");
 		} 
+		System.out.print("\n");
 		//push eeg to LSL outlet
 		eegOutlet.push_sample(eeg);
 		//to make sure you get proper timestamps, maybe do it like this:

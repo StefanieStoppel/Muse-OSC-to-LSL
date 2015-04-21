@@ -223,7 +223,7 @@ public class MuseIOReceiver {
 			else if (config != null) {
 				if (addressPattern.equals("/muse/eeg"))
 					this.sendEeg(config, msg);
-				/*else if(addressPattern.equals("/muse/elements/blink"))
+				else if(addressPattern.equals("/muse/elements/blink"))
 					this.sendBlink(config, msg);
 				else if (addressPattern.equals("/muse/elements/alpha_relative"))
 					this.sendAlpha(config, msg);
@@ -236,11 +236,11 @@ public class MuseIOReceiver {
 				else if (addressPattern.equals("/muse/elements/experimental/mellow"))
 					this.sendMellow(config, msg);
 				else if (addressPattern.equals("/muse/elements/experimental/concentration"))
-					this.sendConcentration(config, msg);*/
-				/*else if (addressPattern.equals("/muse/acc"))
+					this.sendConcentration(config, msg);
+				else if (addressPattern.equals("/muse/acc"))
 					this.sendAccel(config, msg);
 				else if (addressPattern.equals("/muse/batt"))
-					this.sendBattery(config, msg);*/
+					this.sendBattery(config, msg);
 				
 				
 			}
